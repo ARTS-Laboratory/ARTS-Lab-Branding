@@ -1,0 +1,17 @@
+Sub progressBarBlack()
+On Error Resume Next
+With ActivePresentation
+For X = 1 To .Slides.Count
+.Slides(X).Shapes("full").Delete
+.Slides(X).Shapes("PB").Delete
+Set s = .Slides(X).Shapes.AddShape(msoShapeRectangle, _
+17#, _
+.PageSetup.SlideHeight - 25, _
+X * (.PageSetup.SlideWidth - 17 * 2) / .Slides.Count, _
+8.5)
+s.Fill.ForeColor.RGB = RGB(0, 0, 0)
+s.Line.Visible = False
+s.Name = "PB"
+Next X:
+End With
+End Sub
