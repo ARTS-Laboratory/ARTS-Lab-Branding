@@ -2,7 +2,7 @@
 Branding for the Adaptive Real-Time Systems Laboratory (ARTS-Lab; an interdisciplinary research lab at the University of South Carolina.
 
 ## [Logos](Icons)
-Logs for both the ARTS-Lab and the UofSC
+Logos for both the ARTS-Lab and the UofSC
 
 ## [PowerPoint](PowerPoint)
 A cleaned up version of the UofSC PowerPoint template. 
