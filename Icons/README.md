@@ -15,19 +15,20 @@ This one will also work, please never use the "chicken".
 <p align="center">
 </p>
 
-The ARTS-Lab logo. 
+The ARTS-Lab logo with text, which I find to be more informative.  
+<p align="center">
+<img src="ARTS-Lab_text.png" alt="drawing" width="400"/>
+</p>
+<p align="center">
+</p>
+
+Just the plain ARTS-Lab logo. 
 <p align="center">
 <img src="ARTS-Lab.png" alt="drawing" width="200"/>
 </p>
 <p align="center">
 </p>
 
-The ARTS-Lab logo with text, which I find to be more informitive.  
-<p align="center">
-<img src="ARTS-Lab_text.png" alt="drawing" width="400"/>
-</p>
-<p align="center">
-</p>
 
 Additional version of the logos are found in the subsequent folders. 
 
