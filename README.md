@@ -4,7 +4,7 @@ Branding for the Adaptive Real-Time Systems Laboratory (ARTS-Lab; an interdiscip
 ## [Logos](Icons)
 Logs for both the ARTS-Lab and the UofSC
 
-## [Logos](Powerpoint)
+## [PowerPoint](PowerPoint)
 A cleaned up version of the UofSC PowerPoint template. 
 
 ## [Word Documents](Word_Document)
