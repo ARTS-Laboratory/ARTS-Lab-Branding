@@ -1,4 +1,4 @@
-# ICONS
+# Logos
 Logos for both the ARTS-Lab and the UofSC
 
 This is the preferred UofSC logo
