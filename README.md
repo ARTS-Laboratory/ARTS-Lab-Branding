@@ -1,20 +1,14 @@
-# Powerpoint-Template
-A modified Powerpoint template to use for internal meetings.
+# ARTS-Lab Branding
+Branding for the Adaptive Real-Time Systems Laboratory (ARTS-Lab; an interdisciplinary research lab at the University of South Carolina.
 
-<p align="center">
-<img src="slide_layout_with_snake.png" alt="drawing" width="700"/>
-</p>
-<p align="center">
-</p>
+## [Logos](Icons)
+Logs for both the ARTS-Lab and the UofSC
 
-1. The PPT is based on the UofSC slide deck, but with fonts that play nice with open-source fonts. 
-1. Greatly reduced the number of layout in the slide master.
-1. Added page numbers.
-1. Macros are provided for progress bars on the bottom of the slides, you can run a macro though view > . They are:
-	- progressBarSnake - completes the red box around the outside of slides as the presentation progresses 
-	- progressBarBlack - Draws a black bar across the bottom of the slides, but inside the boarder as the presentation progresses 
+## [Logos](Powerpoint)
+A cleaned up version of the UofSC PowerPoint template. 
 
-
+## [Word Documents](Word_Document)
+A basic Word document with the appropriate UofSC colors. 
 
 
 
