@@ -1,4 +1,4 @@
-# Powerpoint-Template
+# PowerPoint-Template
 A modified Powerpoint template to use for internal meetings.
 
 <p align="center">
