@@ -9,17 +9,19 @@ Branding for the Adaptive Real-Time Systems Laboratory (ARTS-Lab; an interdiscip
 
 
 ## [Logos](Logos)
-Logos for both the ARTS-Lab and the UofSC.
+Logos for both the ARTS-Lab and the USC.
 
 ## [Lab Art](Lab_Art)
 Art to hang on the wall in labs and offices.
 
 ## [PowerPoint](PowerPoint)
-A cleaned up version of the UofSC PowerPoint template. 
+A cleaned up version of the USC PowerPoint template. 
 
 ## [Word Documents](Word_Document)
-A basic Word document with the appropriate UofSC colors. 
+A basic Word document with the appropriate USC colors. 
 
+## [Stickers](Stickers)
+Group stickers projects and teams. 
 
 
 
