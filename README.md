@@ -31,6 +31,8 @@ ARTS-Lab logos and other branding assets for use in presentations, documents, po
 ## [Stickers](stickers)
 Design files and resources for ARTS-Lab stickers.
 
+## [Lab Art](Lab_Art)
+ARTS-Lab artwork, graphics, and other visual assets.
 
 
 
