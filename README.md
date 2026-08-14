@@ -1,5 +1,5 @@
 # ARTS-Lab Resources
-General resources for the Autonomous Real-Time Systems Laboratory (ARTS-Lab; an intelligent controls group at the University of South Carolina.
+General resources for the Autonomous Real-Time Systems Laboratory (ARTS-Lab); an intelligent controls group at the University of South Carolina.
 
 <p align="center">
 <img src="Logos/ARTS-Lab_text.png" alt="drawing" width="400"/>
