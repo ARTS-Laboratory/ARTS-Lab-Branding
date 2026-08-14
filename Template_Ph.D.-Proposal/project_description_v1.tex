@@ -1,0 +1,316 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%				NSF requirement, DO NOT ADJUST 							%	
+\documentclass[11pt,letterpaper]{article}
+\usepackage{mathptmx} % added for time new roman font						%
+\usepackage[left=1in,right=1in,top=1in,bottom=1in]{geometry}				%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{paralist}
+\usepackage{placeins}		% Added for \FloatBarrier
+\usepackage{enumitem}		% Added for changes in \item
+\usepackage{commath} 		% added for \norm
+\usepackage{wrapfig}
+%\usepackage{tabu}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{soul}
+\usepackage[hyphens]{url}
+\usepackage{xfrac}
+\usepackage[table,xcdraw]{xcolor}
+\setuldepth{Berlin}
+\usepackage[textsize=tiny]{todonotes}
+\usepackage{lipsum}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[hidelinks]{hyperref}		% added for custom .bst file, as explained here. https://tex.stackexchange.com/questions/67444/doi-in-ieeetran-bibliography
+\usepackage{multicol}
+
+\renewcommand{\figurename}{Fig.}
+
+\usepackage{soul}
+
+%set page header and footer
+
+\usepackage{array}      % better p{...} handling
+\usepackage{booktabs}   % \toprule, \midrule, \bottomrule
+\usepackage{ragged2e}   % \RaggedRight for nicer ragged cells
+\usepackage{arydshln}   % dashed lines in tables
+
+
+% packages added by Austin Downey for the maths
+%\usepackage{amsbsy} % added to use \pmb or poor mans bold
+%\usepackage{txfonts} % added for \muup and other upright greek letters
+\usepackage{upgreek}
+
+% adjust the spacing around section titles
+\usepackage{titlesec}
+\titlespacing*{\section}
+{0pt}{2ex}{0.8ex}
+\titlespacing*{\subsection}
+{0pt}{1ex}{0.8ex}
+\titlespacing*{\subsubsection}
+{0pt}{0.8ex}{0.4ex}
+
+
+\newcommand{\tb}[1]{\textbf{#1}}
+\newcommand{\eq}[1]{\begin{equation}{#1}\end{equation}}
+\newcommand{\eqs}[1]{\begin{equation}\begin{split}{#1}\end{split}\end{equation}}
+
+
+\newcommand{\todogreen}[1]{\todo[color=green!40]{#1}}
+\newcommand{\todoblue}[1]{\todo[color=blue!40]{#1}}
+
+
+\usepackage{color} % color added for editing
+\newcommand{\bl}[1]{\textcolor[rgb]{0.00,0.00,1.00}{#1}}
+\newcommand{\gr}[1]{\textcolor[rgb]{0.00,0.50,0.00}{#1}}
+\newcommand{\rd}[1]{\textcolor[rgb]{0.75,0.00,0.00}{#1}}
+\newcommand{\tl}[1]{\textcolor[rgb]{0,0.6,0.60}{#1}}
+
+
+\newcommand{\thrustsection}[2]{\noindent \textbf{Task #1:}{ \textbf{#2}}}
+\newcommand{\tasksection}[2]{\noindent \emph{Task #1:}{ \emph{#2}}}
+
+
+
+\begin{document}
+
+\setlength{\abovedisplayskip}{3pt}
+\setlength{\belowdisplayskip}{3pt}
+
+
+%\tableofcontents
+%\newpage
+%
+%\setcounter{page}{1}
+
+% \pagestyle{empty} % use to remove page numbers for final submission
+
+\begin{center}		
+%{\Large \textbf{Large-scale CoPe: Adaptive Infrastructure for Antifragile Coastal Communities}}
+{\LARGE \textbf{Title for your proposal}}
+\end{center}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Driving Motivation}
+
+Purpose of this section: Clearly articulate the compelling research problem. This section should make a program officer and panelist care about the work within the first page. If the motivation is weak, the proposal will not be competitive.
+
+Read the NSF PAPPG carefully regarding the Project Description requirements and merit review criteria. Make sure you understand the NSF page limit requirement. This section should establish:
+\begin{itemize}
+    \item The core problem or challenge.
+    \item Why it matters scientifically, societally, or technologically.
+    \item The gap in current knowledge, capability, or theory.
+    \item Why now is the right time to address this problem.
+\end{itemize}
+You must:
+\begin{itemize}
+    \item Clearly define the research question(s).
+    \item Articulate testable hypotheses or research objectives.
+    \item Identify the intellectual domain(s) involved.
+\end{itemize}
+
+\noindent {Do not provide a literature review here. Focus on urgency, significance, and opportunity. By the end of this section, a reviewer should understand 
+\begin{quote}
+What is the problem? Why is it important? What will change if this succeeds?
+\end{quote}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Prior Work}
+
+\textbf{Purpose of this section:} Situate your prior work~\cite{Downey2025MachineLearningEngineering} within the existing literature~\cite{Krizhevsky2012ImagenetClassificationDeep} and clearly demonstrate the gap your work fills. Guidance is as follows:
+\begin{itemize}
+    \item Summarize the most relevant foundational and recent work.
+    \item Identify limitations of existing approaches.
+    \item Clarify how your approach differs.
+\end{itemize}
+This is not a historical survey. It is a strategic positioning section.
+Explicitly address:
+\begin{itemize}
+    \item What has already been done?
+    \item Why is it insufficient?
+    \item What conceptual, methodological, or empirical gap remains?
+\end{itemize}
+Where appropriate, include discussion of:
+\begin{itemize}
+    \item Preliminary results (if any).
+    \item Feasibility evidence.
+    \item Foundational theory supporting your approach.
+\end{itemize}
+Your writing should make clear that you understand the field deeply enough to lead it.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Intellectual Merit}
+
+This section is required by NSF and must explicitly address the Intellectual Merit review criterion as described in the PAPPG.
+
+You must directly respond to:
+\begin{itemize}
+    \item What is the potential for the proposed activity to advance knowledge?
+    \item How is the work creative, original, or transformative?
+    \item What is the quality of the research plan?
+    \item What are the qualifications of the investigator (you)?
+\end{itemize}
+This section should include:
+\begin{itemize}
+    \item Theoretical contributions.
+    \item Methodological innovations.
+    \item Expected scholarly outputs.
+    \item Broader implications within the academic discipline.
+\end{itemize}
+Avoid vague claims. Provide concrete statements such as:
+\begin{itemize}
+    \item ``This work will establish?''
+    \item ``This research will resolve?''
+    \item ``This framework enables?''
+\end{itemize}
+Panelists score this explicitly. Write accordingly.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Broader Impacts}
+
+This section is required by NSF and must explicitly address the Broader Impacts review criterion as defined in the PAPPG.
+You must address:
+\begin{itemize}
+    \item How does this benefit society?
+    \item How does it contribute to desired societal outcomes?
+    \item How will knowledge be disseminated?
+\end{itemize}
+Possible areas to consider (see PAPPG for full list):
+\begin{itemize}
+    \item Education and workforce development
+    \item Broadening participation
+    \item Public engagement
+    \item Open science and data sharing
+    \item Partnerships with industry or community stakeholders
+\end{itemize}
+Broader Impacts should be integrated and realistic - not symbolic.
+Avoid generic statements. Provide:
+\begin{itemize}
+    \item Specific activities
+    \item Measurable outcomes
+    \item Clear audiences
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Research Objectives}
+
+This section should clearly state the central engineering objective that defines the intellectual direction of the project. Begin by articulating the overarching objective of the work in a single, declarative sentence that describes the primary engineering goal and the capability, system, framework, or understanding the project seeks to establish. This statement should define the unifying technical vision for the proposal.
+
+Following the overarching objective, provide three concise sub-objectives that collectively achieve this goal. These sub-objectives should reflect the core technical thrusts of the work (e.g., build, test, analyze), and together define
+a coherent and executable research agenda.
+
+\begin{itemize}
+    \item \textbf{Sub-Objective 1: [Build / Design / Develop $\dots$]} - One sentence describing the first technical objective, such as constructing a model, designing a system, developing an algorithm, or creating a prototype.
+    \item \textbf{Sub-Objective 2: [Test / Validate / Quantify $\dots$]} - One sentence describing the second technical objective, such as experimentally validating performance, benchmarking against the state of the art, or quantifying key metrics.
+    \item \textbf{Sub-Objective 3: [Analyze / Explore / Generalize $\dots$]} - One sentence describing the third technical objective, such as analyzing system behavior, exploring parameter spaces, assessing robustness, or demonstrating broader applicability.
+\end{itemize}
+
+Each sub-objective must correspond directly to one of the research tasks described in the following section (Task 1 addresses Sub-Objective 1, Task 2 addresses Sub-Objective 2, and Task 3 addresses Sub-Objective 3).
+The alignment between objectives and tasks should be immediately clear to a reviewer without additional explanation.
+This section is typically concise and should fit naturally within the overall 15-page Project Description limit.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research Plan}
+
+\subsection{Overview}
+
+Provide a concise overview of the research strategy and how the tasks integrate to achieve the overall objective.
+The structure below is highly recommended. Each task must be technically substantive and logically connected.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Task 1: [Insert Descriptive Title]}
+The goal of Task 1 is to meet Objective 1. Add a basic sentence here to describe the task.
+\subsubsection*{Subtask 1.1: [Title]}
+Add the textural description of the subtask here.
+\subsubsection*{Subtask 1.2: [Title]}
+Add the textural description of the subtask here.
+\subsubsection*{Subtask 1.3: [Title]}
+Add the textural description of the subtask here.
+
+\subsection{Task 2: [Insert Descriptive Title]}
+The goal of Task 1 is to meet Objective 2. Add a basic sentence here to describe the task.
+\subsubsection*{Subtask 2.1 [Title]}
+Add the textural description of the subtask here.
+\subsubsection*{Subtask 2.2 [Title]}
+Add the textural description of the subtask here.
+\subsubsection*{Subtask 2.3 [Title]}
+Add the textural description of the subtask here.
+
+\subsection{Task 3: [Insert Descriptive Title]}
+The goal of Task 1 is to meet Objective 3. Add a basic sentence here to describe the task.
+\subsubsection*{Subtask 3.1 [Title]}
+Add the textural description of the subtask here.
+\subsubsection*{Subtask 3.2 [Title]}
+Add the textural description of the subtask here.
+\subsubsection*{Subtask 3.3 [Title]}
+Add the textural description of the subtask here.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Project Management Plan}
+
+Although this is a single-investigator-style proposal, you must demonstrate:
+\begin{itemize}
+    \item Timeline (include a Gantt chart if space permits).
+    \item Milestones.
+    \item Risk management.
+    \item Data management alignment with NSF Data Management Plan requirements.
+\end{itemize}
+Discuss:
+\begin{itemize}
+    \item Year-by-year objectives.
+    \item Publication strategy.
+    \item Conference dissemination.
+    \item Reproducibility practices.
+\end{itemize}
+
+Your management plan should make reviewers confident the project will finish on time and produce meaningful outcomes.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Prior NSF Support}
+
+This section must comply exactly with the current NSF PAPPG requirements. If the PI has received NSF funding within the past five years, a ``Results from Prior NSF Support'' section is required. Important guidance from the PAPPG include:
+\begin{itemize}
+    \item If the PI has received more than one NSF award (excluding amendments), only the award most closely related to the proposed project must be reported.
+    \item ``Support'' includes salary support and any other funding awarded by NSF, including research grants, Graduate Research Fellowships (GRFP), Major Research Instrumentation awards, conference awards, equipment awards, travel awards, center awards, or similar mechanisms.
+\end{itemize}
+For the award being reported, include:
+\begin{itemize}
+    \item NSF award number
+    \item Award amount
+    \item Period of support
+    \item Summary of results
+    \item Publications and products
+    \item Explicit description of outcomes related to Intellectual Merit
+    \item Explicit description of outcomes related to Broader Impacts
+\end{itemize}
+
+Being paid as a graduate student, postdoc, or staff member on an NSF award where your advisor or supervisor is the PI does not constitute prior NSF support for purposes of this section. Only awards made directly to you as PI or co-PI (including GRFP) must be reported.
+
+If you have not received prior NSF support as defined above, state: ``The PI has not received prior NSF support.'' Failure to comply with PAPPG formatting and content requirements may result in administrative return without review.
+
+
+\pagebreak
+
+
+\FloatBarrier
+\newpage
+%\section*{References}
+\renewcommand{\thepage}{}
+%\bibliographystyle{unsrt}
+\renewcommand\refname{References Cited}
+\bibliographystyle{Downey_NSF} %unsrtDOI}
+%\bibliographystyle{unsrt}
+\bibliography{references}
+\end{document}
+
+
