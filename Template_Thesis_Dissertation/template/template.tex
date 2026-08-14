@@ -1,0 +1,285 @@
+\documentclass{uscthesis}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Options include: [forbinding], which produces 
+%%% an alternative title page and an appropriate
+%%% binding margin,  [honors] for Honors College theses,
+%%% and [durt] for undergraduate thesis submitted as part
+%%% part of the distinction in mathematics program.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  LaTeX Preamble
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% You should include above
+%% any LaTeX packages that you need.  Most packages should work 
+%% with this documentclass.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Encoding and line spacing
+\usepackage[utf8]{inputenc}
+\renewcommand{\baselinestretch}{1.0} % Set to 1.65 for double spacing
+
+% Math and symbols
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{siunitx}
+\usepackage{cancel}
+
+% Graphics and figures
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{placeins}
+\usepackage{pdfpages}
+\usepackage{lipsum}
+
+% Tables
+\usepackage{longtable, tabularx}
+\usepackage{booktabs}
+\usepackage{multirow}
+
+% Lists
+\usepackage{enumitem}
+\usepackage{eso-pic}
+
+
+% Colors and editing tools
+\usepackage{color}
+\usepackage{soul} % for \st (strike through)
+\usepackage[textsize=tiny,textwidth=0.72in]{todonotes}
+
+% Hyperlinks
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+% Uncomment below if you want links without colors (e.g., for printing)
+% \hypersetup{hidelinks}
+
+% Text coloring macros
+\newcommand{\bl}[1]{\textcolor[rgb]{0.00,0.00,1.00}{#1}}  % Blue
+\newcommand{\gr}[1]{\textcolor[rgb]{0.00,0.50,0.00}{#1}}  % Green
+\newcommand{\rd}[1]{\textcolor[rgb]{0.75,0.00,0.00}{\st{#1}}}  % Red with strike
+\newcommand{\tl}[1]{\textcolor[rgb]{0,0.6,0.60}{#1}}  % Teal
+
+\usepackage{eso-pic}
+
+\AddToShipoutPictureFG{%
+	\AtPageUpperLeft{%
+		\raisebox{-0.3in}{
+			\hspace{0.5in}
+			\makebox[0pt][l]{\scriptsize \bl{If needed, add DCN number. Otherwise delete.}}
+		}
+	}
+	\AtPageUpperLeft{%
+		\raisebox{-0.3in}{
+			\hspace{\dimexpr\paperwidth-0.75in\relax}
+			\makebox[0pt][r]{\scriptsize \bl{If needed, add clearance date here. Otherwise delete.}}
+		}
+	}
+	\AtPageLowerLeft{%
+		\raisebox{0.1in}{%
+			\hspace{0.75in}%
+			\makebox[\dimexpr\paperwidth-1.2in\relax][c]{\scriptsize \bl{If needed, add DISTRIBUTION STATEMENT here. Otherwise delete.} }%
+		}%
+	}%
+}
+
+
+
+
+%\usepackage[style=uscauthoryear]{biblatex}
+%\bibliography{thesis.bib}
+%\addbibresource{thesis.bib}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% The lines above specify a BibTeX style which controls 
+%% the appearance of the bibliography and how citations to
+%% the bibliography within the text will work.  It is based on the biblatex.sty
+%% package and provides a Chicago style, as preferred by the Graduate School.
+%% There are other acceptable styles.  Indeed, different academic disciplines
+%% have different styles.
+%% 
+%% The line  \bibliography{references} will cause LaTeX is search for a file
+%% called references.bib.  This file could be named differently.  For example
+%% \bibliography{henry} would provoke a search for henry.bib.  The
+%% file reference.bib (or henry.bib) is one you will have to produce.  It is
+%% a BibTeX database of references you use.
+%% 
+%% There are a number of alternate ways to address your bibliographic needs.
+%% See the documentation uscthesisdoc.pdf  for a discussion of the different options.
+%%
+%%
+%% 
+%%In any case, this  is a good spot to ask LaTeX to load what it needs to handle
+%% literature citations and to layout the bibliography. 
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%             The Front Matter
+%%  The section below deals with the material that comes 
+%%  before the actual content of the document: The title 
+%%  page, abstract, acknowledgments,etc.
+%%
+%%  Some of it is required.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{
+%		\fontsize{7}{8}\selectfont
+		\textcolor{red}{If needed, add US Government Disclaimer here, otherwise delete.} \\
+		\vspace{6mm}
+	Title }
+
+\author{First-Name}{Last-Name}    %% First Name then 
+                                 %% Last Name
+
+\degreedate{2026}                      %% The year of graduation
+
+%\month{December}                 %% Only for the honors option
+                                 %% where it is REQUIRED
+
+\otherdegrees{
+Bachelor of Science\\
+University of South Carolina 2024\\ [\baselineskip]
+
+}                                %% ESSENTIAL!
+
+\degreename{Masters of Science}     %% The Graduate School provides 
+                                 %% a list of official degrees.
+\field{Mechanical Engineering}              %% Fields also provided by the 
+                                 %% Graduate School.
+\college{Molinaroli College of Engineering and Computing}  %%As listed by Grad School
+
+\advisor {Dr.}{Austin R.J. Downey}{Director of Thesis}  %%% Be sure the 
+\readera{Dr.}{Bob}{Committee Member}     %%% third field is 
+\readerb{Dr.}{Bill}{Committee Member}          %%% the one used in 
+%\readerc{Dr.}{George Washington}{Fourth Reader} %%% your department.
+%\readerd{Dr.}{Hank Plantagenet}{King}               %%% Only use as many as
+%%% If you have just two readers, for example, leave out \readerc and
+%%% \readerd
+%%%
+%%% For Honors College theses use \reader{}{}   NO third field.
+%%% The commands \otherdegrees, \degree, \field, \college, \readera, etc.
+%%% are not used under the honors option.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\dean{Lara Lomicka Anderson}{Dean}   %% The Dean of the Graduate School
+                   %% BE SURE TO CHECK THE NAME OF THE
+                   %%PERSON CURRENTLY HOLDING THIS POSITION	
+		   %% and the correct title.		             		
+                     %% For Honors College theses use
+                     %% \schcsigner{}{}.  For example,
+                     %% \schcsigner{Dr.}{Davis Baird}
+
+%\copyrightpage       %% This is optional. It makes a 
+                     %% copyright page that will appear 
+                     %% immediately after the title page.
+
+\abstract{Abstract/abstract}  %% This calls the file herkimer.tex but 
+                     %% but you might replace herkimer by 
+                     %% anything you like, for example by 
+                     %% abstract. Note, the Graduate School
+                     %% REQUIRES that PhD dissertations have 
+                     %% abstracts.
+                     %%
+                     %% For Honors College theses use
+                     %% \honorsabstract{}
+
+%\summary{precis}     %% This command calls  precis.tex
+                     %% It is only available with the honors
+                     %% option and it is REQUIRED for Honors
+                     %% theses. 
+
+\acknowledgments{Thanks/thanks} %% This calls the file thanks.tex 
+%% This is optional       %% where you have put your 
+                          %%acknowledgments.
+
+%\dedication{dedication}   %% Calls dedication.tex
+%%% Also optional
+
+%\preface{forward}    %% Calls forward.tex.  Optional.
+
+\makeLoT               %% Issue this command if your work has 
+                       %% four or more tables.  A list of tables 
+                       %% will be produced automatically.
+
+\makeLoF               %% works the same way but for figures.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Finally, here is the meat.  The idea is to compose a 
+%%  .tex file for each section of your thesis or dissertation.  
+%%  Then use LaTeX's \include command to put them all together.  
+%%  Doing it this way makes it easier to change the order of 
+%%  exposition as your writing is in progress.  Also it
+%%  makes it easy to print out just one section. The \include
+%%  command always starts a new page. So every section would 
+%%  start on a new page.  If you would like for sections just
+%%  to continue, after the appropriate vertical space, on the
+%%  current page, then use the \input command instead of the 
+%%  \include command.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+\include{Chapter1/Introduction}    %% Calls Introduction.tex
+                          %% Introduction.tex should begin
+                          %%
+                          %% \chapter{Introduction}
+                          %% followed by the text of the 
+                          %% introduction.
+\include{Chapter2/Chapter_2_Paper1}
+\include{Chapter3/Chapter_3_Paper2}
+\include{Chapter4/Chapter_4_Paper3}
+\include{Chapter5/Chapter_5_Conclusion}
+%
+%\include{Squares}         %% The three sections of Chapter 1 
+%\input{Cube}             %% are in the files Squares.tex,  
+%\input{Hypercubes}	   %% Cubes.tex and Hypercubes.tex
+%       
+                           
+%\include{1mod4}            %% OF COURSE you should not use these names
+%\input{flying}            %% but rather whatever is appropriate for your
+%\input{joins}             %% own work!!!
+%\input{wattage}
+%
+%\include{3mod4}	          %% This chapter has 8 sections
+%\input{bigtime}         %% You should give your sections
+%\input{smalltime}       %% logical names, rather than
+%\input{roadmap}         %% numbers. As you write, you might
+%\input{overview}        %% decide to rearrange things. 
+%\input{turnabout}       %% LaTeX can keep track of the
+%\input{fairplay}        %% numbering for you.
+%\input{roundup}
+%
+%\include{rest}
+%\input{relax}
+%\input{grin}
+ 
+% Bibliography
+\bibliographystyle{ieeetr}  % or amsplain, apalike, etc.
+\bibliography{references.bib} 
+%\printbibliography %%  This is the command to use to
+			       %%  insert the bibliography if you are using
+                           %% the biblatex.sty package.  See the 
+                           %% uscthesisdoc.pdf documentation for
+                           %% for alternative bibliographic systems.     
+
+\Appendix                 %% Use this command if you have one 
+\include{Appendix/Appendix}                          %% appendix. Use \Appendices if you 
+                          %% have more than one.
+	
+%\input{toolong}         %% Calls toolong.tex which contains
+                          %% an appendix. After issuing the 
+                        %% command \Appendix or \Appendices
+                        %% you must use \input not \include
+                        %% to load the first appendix.
+
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
